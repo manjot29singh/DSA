@@ -22,3 +22,14 @@ public class l001{
             System.out.println("");
         }
     }
+    //assigning the value to the variable 
+    public static void givingvalue(int b)
+    {
+        for (int i=1 ; i<=b ; i++)
+        {   
+            int c = sc.nextInt();
+            odd_evn(c);
+            
+            
+        }
+    }
