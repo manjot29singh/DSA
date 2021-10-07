@@ -1,1 +1,24 @@
+import java.util.Scanner;
 
+public class l001{
+   public static Scanner sc = new Scanner (System.in);
+
+   //PATTERN
+
+
+   //to print table 
+    public static void printtable(int n){
+        for(int i=1 ; i<=10 ; i++)
+        {
+            System.out.println(n + "*" + i + "=" + n*i);
+        }
+    }
+
+    //to print table til a given number
+    public static void printtabletillm(int m){
+        for(int i =1; i<=m ; i++)
+        {
+            printtable(i);
+            System.out.println("");
+        }
+    }
