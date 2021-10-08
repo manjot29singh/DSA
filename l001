@@ -57,3 +57,22 @@ public class l001{
         }
         return true;
     }
+     //checking aur printing the prime or not prime.
+    public static void giving(int t)
+    {
+        int i;
+        for( i=1; i<=t ; i++)
+        {
+            int n = sc.nextInt();
+            isprime(n);
+            if(isprime(n))
+            {
+                System.out.println("prime" );      
+            }
+            else
+            {
+            System.out.println("not prime "  );      
+            }
+         }
+    }
+
