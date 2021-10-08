@@ -75,4 +75,15 @@ public class l001{
             }
          }
     }
+    //print all the primes till n
+    public static void primestilln(int low , int high)
+    {
+        for( int i= low ; i <=high ; i++)
+        {
+            if(isprime(i))
+            {
+                System.out.println(i);
+            }
+        }
+    }
 
