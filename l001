@@ -99,4 +99,29 @@ public class l001{
             b =c;
         }
     }
+    //counting the number of digits in  a given number
+    public static int countdigits(int n)
+    {
+        int count=0;
+        while(n != 0)
+        {
+            n = n/10;
+            count++;
+        }
+        return count;
+    }
+    //reverseing the given number
+    public static int reverse(int n)
+    {
+        int lastdigit = 0;
+        int ans=0;
+        while(n != 0)
+        {
+            lastdigit = n % 10;
+            n /= 10;
+            ans = ans * 10 + lastdigit ;
+        }
+        System.out.println(ans + 7);     
+        return ans;
+    }
 
