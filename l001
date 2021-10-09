@@ -124,4 +124,17 @@ public class l001{
         System.out.println(ans + 7);     
         return ans;
     }
+    //finding the gcd of the two numbers
+    public static int gcd(int a, int b)
+    {
+        int dividend =a;
+        int divisor =b;
+        while(dividend % divisor != 0)
+        {
+            int remainder = dividend % divisor;
+            dividend = divisor;
+            divisor = remainder;
+        }
+        return divisor;    
+    }
 
