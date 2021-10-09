@@ -143,4 +143,13 @@ public class l001{
         return (a * (b / gcd));//here we first perform the (/) opertn bcs if we (*) these numbers first then then they can exceed the number range.
 
     }
+    // finding if 3 numbers are pythagorous triplet or not ?
+        public static boolean pythagorean_triplet(int a, int b, int c)
+    {
+        if(a * a + b * b ==c*c || a*a + c*c == b*b || c*c + b*b == a*a)
+        {
+            return true;
+        }
+        return false;
+    }
 
