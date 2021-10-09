@@ -137,4 +137,10 @@ public class l001{
         }
         return divisor;    
     }
+     //finding the lcm of 2 numbers using the gcd formula 
+    public static int lcm(int a, int b, int gcd)
+    {
+        return (a * (b / gcd));//here we first perform the (/) opertn bcs if we (*) these numbers first then then they can exceed the number range.
+
+    }
 
