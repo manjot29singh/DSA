@@ -152,4 +152,34 @@ public class l001{
         }
         return false;
     }
+     //to rotate a number 
+    public static int rotate(int n , int r)
+    {   
+        int lenght = countdigits(n);
+        r = r%lenght;
+        if(r<0)
+        {
+            r = r+lenght;
+        }
+
+
+        
+        int mul =1;
+        int div =1;
+        for(int i=1 ; i<=lenght ; i++)
+        {
+            if(i<=r)
+            {
+                div=div*10;
+            }
+            else
+            {
+                mul=mul*10; 
+            }
+        }
+        int a = n % div;
+        int b= n / div;
+        return a * mul + b;
+    }
+
 
