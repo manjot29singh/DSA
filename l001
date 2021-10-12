@@ -33,6 +33,17 @@ public class l001{
             
         }
     }
+    //Calculating the number of zeros behind 1 (10000........)
+     public static int powerof10(int n)
+     {
+         n = n/10;
+         int power = 1;
+         while(n != 0){
+             n /= 10;
+             power *= 10;
+         }
+       return power;
+     }
     //checking it for odd or even.
     public static void odd_evn(int c)
     {
