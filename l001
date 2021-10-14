@@ -203,5 +203,17 @@ public class l001{
          }
        return power;
      }
+      //Digits of a number
+    public static void  digit(int n )
+    {
+       int power= powerof10(n);
+        while(power != 0)
+        {
+            int num = n/power;
+            int ld = num%10;
+            System.out.println(ld);
+            power = power/10;   
+        }
+    }
 
 
