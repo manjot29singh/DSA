@@ -215,5 +215,16 @@ public class l001{
             power = power/10;   
         }
     }
+    public static int powerof10(int n)
+    {
+        n = n/10;
+        int power = 1;
+        while(n != 0)
+        {
+            n /= 10;
+            power *= 10;
+        }   
+    return power;
+    }
 
 
