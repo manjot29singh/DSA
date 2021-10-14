@@ -262,6 +262,13 @@ public class l001{
 }
     public static void main (String[] args)
     {
+       // int number;
+       // int m = sc.nextInt();
+       // printtable(m);
+       // printtabletillm(m);
+       // givingvalue(m);
+       // giving(m);
+       
     }
 
 
