@@ -226,5 +226,17 @@ public class l001{
         }   
     return power;
     }
+    //my practice to generate the number of zeros of power.
+    public static int power(int n)
+    {
+        int count=0;
+        n = n/10;
+        while(n !=0 )
+        {
+            n = n/10;
+            count++;
+        }
+        return count;
+    }
 
 
