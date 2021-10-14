@@ -271,6 +271,9 @@ public class l001{
         // int low= sc.nextInt();
        // int high=sc .nextInt();
        // primestilln(low,high);
+       // int m = sc.nextInt();
+       // fibonacci(m);
+
 
        
     }
