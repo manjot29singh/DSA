@@ -33,6 +33,7 @@ public class l001{
             
         }
     }
+    
     //Calculating the number of zeros behind 1 (10000........)
      public static int powerof10(int n)
      {
@@ -238,5 +239,26 @@ public class l001{
         }
         return count;
     }
+    public static void inverse(int n)
+{
+    int inv=0;
+    int op=1;
+    while (n!= 0)
+    {
+        int od = n % 10;
+        int id = op;
+        int ip = od;
+        int mul = powerof10(n);
+        System.out.println(mul);
+
+
+        inv = inv + id * (int)Math.pow(10,ip-1);
+        
+        n=n/10;
+        op++;
+        }
+        System.out.println(inv);
+
+}
 
 
