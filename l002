@@ -1,1 +1,18 @@
+import java.util.Scanner;
+public class l002{
+    public static Scanner sc= new Scanner(System.in);
 
+    //PATTERN 1
+    public static void triangle(int row)
+    {
+        int nst = 1 ;
+            for(int r= 1 ; r<=row ; r++)
+            {
+                for(int cst =1 ; cst <= nst ; cst++)
+                {
+                    System.out.print("*\t");
+                }
+                nst++;
+                System.out.println();
+            }  
+    }
