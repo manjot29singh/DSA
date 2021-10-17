@@ -14,6 +14,19 @@ public class btd{
         }
         return res;
     }
+    //Any base to decimal
+    public static long abtd(long n, long b)
+    {
+        long pow=1, resl = 0;
+        while( n != 0 )
+        {
+            long lastdigit= n % 10;
+            n=n/10;
+            resl += lastdigit * pow;
+            pow = pow*b;
+        }
+        return resl;
+    }
   
   
   
