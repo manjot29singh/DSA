@@ -1,0 +1,22 @@
+import java.util.*;
+public class btd{
+    public static Scanner sc = new Scanner(System.in);
+    //Decimal to any base (Always think to convert in binary using 2 after that change  to "b")
+    public static long dtab(long n, long b)
+    {
+        long pow =1, res=0;
+        while( n != 0)
+        {
+            long lastdigit = n % b;
+            n = n/b;
+            res = res + lastdigit * pow;
+            pow = pow*10;
+        }
+        return res;
+    }
+  
+  
+  
+  
+  }
+   
