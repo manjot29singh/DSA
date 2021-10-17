@@ -52,6 +52,17 @@ public class btd{
         }
         return res;
     }
+    //Binary addition 
+    public static long binaryaddition(long a, long b , long base)
+    {
+        long carry=0,res=0,pow=1,ld=0;
+        while( a!=0 || b!=0 || carry!=0) 
+        {   
+            long x= a%10;
+            long y = b%10;
+            long z= x + y + carry;
+            a = a/10;
+            b = b/10;
   
   
   
