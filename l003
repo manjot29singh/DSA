@@ -63,6 +63,14 @@ public class btd{
             long z= x + y + carry;
             a = a/10;
             b = b/10;
+             ld= z % base;
+            carry = z / base;
+
+            res = res + ld * pow;
+            pow = pow*10;
+        }
+        return res;   
+    }
   
   
   
