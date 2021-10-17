@@ -27,6 +27,31 @@ public class btd{
         }
         return resl;
     }
+    //Any base to Any base
+    public static long abtd1(long n, long b)
+    {
+        long pow=1, resl = 0;
+        while( n != 0 )
+        {
+            long lastdigit= n % 10;
+            n=n/10;
+            resl += lastdigit * pow;
+            pow = pow*b;
+        }
+        return resl;
+    }
+    public static long dtab1(long n, long b)
+    {
+        long pow =1, res=0;
+        while( n != 0)
+        {
+            long lastdigit = n % b;
+            n = n/b;
+            res = res + lastdigit * pow;
+            pow = pow*10;
+        }
+        return res;
+    }
   
   
   
