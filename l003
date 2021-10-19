@@ -154,6 +154,10 @@ public class btd{
         }
         return minele;
     }
+    //Generating the array.
+    public static int[] array()
+    {   
+     
 
   
   
