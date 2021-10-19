@@ -71,6 +71,32 @@ public class btd{
         }
         return res;   
     }
+    //Binary Subtraction
+    public static long binarysubtraction(long n1, long n2, long b)
+    {
+        long borrow=0,sum=0,pow=1,res=0;
+        while(n1 != 0 || n2 != 0)
+        {
+            long x = n1%10;
+            long y = n2%10;
+            if(x+borrow>=y)
+            {
+                sum=x-y+borrow;
+                borrow=0;
+            }
+            else 
+            {
+                sum= x-y + b + borrow;
+                borrow= -1;
+            }
+            n1=n1/10;
+            n2=n2/10;
+
+            res= res + sum*pow;
+            pow= pow*10;
+        }
+        return res;
+    }
   
   
   
