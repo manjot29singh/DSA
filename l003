@@ -114,6 +114,19 @@ public class btd{
         }
         return res;
     }
+    public static long MULTIPLICATION(int base , int n1 , int n2 )
+    {
+        long result=0,pow=1;
+        while(n2!=0)
+        {
+        int d2= n2%10;
+        n2=n2/10;
+        int fpr=multiplywithsingledigit(base,n1,d2);
+        result=binaryaddition(result,fpr *pow ,base);
+        pow=pow*10;
+        }
+        return result;
+    }
   
   
   
