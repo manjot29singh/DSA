@@ -141,6 +141,20 @@ public class btd{
         }
         return maxele;
     }
+    //Minimum of a array
+    public static int  minimum(int[] arr)
+    {
+        int minele=(int).1e9;
+        for(int element : arr)
+        {
+            if(element<minele)
+            {
+                minele=element;
+            }
+        }
+        return minele;
+    }
+
   
   
   
