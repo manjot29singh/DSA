@@ -127,6 +127,20 @@ public class btd{
         }
         return result;
     }
+    
+    //Maximum of a array
+    public static int maximum(int[] arr)
+    {
+        int maxele = -(int)1e9;
+        for(int element : arr)
+        {
+            if(element > maxele)
+            {
+                maxele=element;
+            }
+        }
+        return maxele;
+    }
   
   
   
