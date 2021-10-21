@@ -252,6 +252,50 @@ public class btd{
         System.out.println(floor);
     } 
     
+     // First And Last Index
+    public static void firstandlastindexofarray(int[] arr)
+    {
+        // to find frist index
+        int low = 0;
+        int high = arr.length - 1;
+        int f1 = -1;
+
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (data < arr[mid]) {
+                high = mid - 1;
+
+            } else if (data > arr[mid]) {
+                low = mid + 1;
+
+            } else {
+                f1 = mid;
+                high = mid - 1;
+            }
+        }
+        System.out.println(f1);
+        //   to find f2=lastindex
+
+        low = 0;
+        high = arr.length - 1;
+        int f2 = -1;
+
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (data < arr[mid]) {
+                high = mid - 1;
+
+            } else if (data > arr[mid]) {
+                low = mid + 1;
+
+            } else {
+                f2 = mid;
+                low = mid + 1;
+            }
+        }
+        System.out.println(f2);
+    }
+    
      
 
   
