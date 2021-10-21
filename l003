@@ -193,6 +193,24 @@ public class btd{
         System.out.println(index);
         return 0; 
     }
+    // Digits Frequency
+    public static int getDigitFrequency(int n, int d) { 
+        int count = 0;
+        if (n == 0) {
+            System.out.println("empty");
+        } else {
+            while (n > 0) {
+                int mod = n % 10;
+                if (mod == d) {
+                    count++;
+                    n /= 10;
+                } else {
+                    n /= 10;
+                }
+            }
+        }
+        return count;
+    }
     
      
 
