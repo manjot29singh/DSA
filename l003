@@ -340,6 +340,21 @@ public class btd{
             } 
             rotate(arr,k);
         }
+        
+        public static void reverse1(int[] arr ,int si,int ei)
+    {
+        // si=0;
+        // ei=arr.length-1;
+        int temp;
+        while(si<ei)
+            {
+                temp=arr[si];
+                arr[si] = arr[ei];
+                arr[ei]=temp;
+                si++;
+                ei--;
+            }   
+    }
     
     
      
