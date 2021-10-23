@@ -370,7 +370,26 @@ public class btd{
         System.out.print(arr[i]);
     }
     
+    // public static List<Integer> rotateLeft(int d, List<Integer> arr) {
+    //     // Write your code here
+            
+    //          int n = arr.size()-1;
+    //         int m = arr.size();
     
+    //         d=d%m;
+           
+    //         if(d<0){
+    //             d=d+m;
+    //         }
+    //         reverse(0,d-1,arr);
+    //         reverse(d,n,arr);
+    //         reverse(0,n,arr);
+    
+    //         return arr;
+    //     }
+    
+    // }
+
      
 
   
