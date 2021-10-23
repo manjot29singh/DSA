@@ -370,8 +370,8 @@ public class btd{
         System.out.print(arr[i]);
     }
     
-    // public static List<Integer> rotateLeft(int d, List<Integer> arr) {
-    //     // Write your code here
+     //public static List<Integer> rotateLeft(int d, List<Integer> arr) {
+    //      Write your code here
             
     //          int n = arr.size()-1;
     //         int m = arr.size();
@@ -389,6 +389,7 @@ public class btd{
     //     }
     
     // }
+    
 
      
 
