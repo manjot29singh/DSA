@@ -327,6 +327,20 @@ public class btd{
                 System.out.print(arr[i]);
             }
     }
+    //Rotate a function
+    public static void array2()
+        {   
+            int n,k;
+             n = sc.nextInt();
+             k= sc.nextInt();
+            int[] arr = new int[n];
+            for(int i=0; i<n ; i++)
+            {
+                arr[i]= sc.nextInt();
+            } 
+            rotate(arr,k);
+        }
+    
     
      
 
