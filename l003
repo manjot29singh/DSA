@@ -402,6 +402,15 @@ public class btd{
         } 
         inverse(arr);
     }
+     public static void inverse(int[] arr)
+    {
+        int[] ans=new int[arr.length];
+        for(int i=0;i<arr.length;i++)
+        {
+            ans[arr[i]]=i;
+        }
+        printarray1(ans);
+    }
 
      
 
