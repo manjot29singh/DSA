@@ -461,7 +461,7 @@ public class btd{
            System.out.println(arr3[l]);
         }
     }
-    // Difference of two Arrays
+    // Difference of two Arrays Iterative
     public static int[] array8() {
         int n = 0;
         n = sc.nextInt();
