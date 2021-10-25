@@ -419,6 +419,48 @@ public class btd{
             }
     }
      
+     //Sum of 2 array
+    public static int[] array4()
+    {   
+        int n=0;
+         n = sc.nextInt();
+        int[] arr = new int[n];
+        for(int b=0; b<n ; b++)
+        {
+            arr[b]= sc.nextInt();
+        } 
+        return arr;
+    }
+    public static void sumof2array(int[] arr1,int[] arr2)
+    { 
+        int m = arr1.length;
+        int n = arr2.length;
+
+        int s  = Math.max(m,n)+1;
+        int[] arr3 = new int[s];
+ 
+        int o = arr3.length;
+        int i=m-1,j=n-1,k=o-1;
+
+        int carry=0 ,sum=0;
+        while(k>=0||i>=0||j>=0)
+        {
+            sum=carry;
+            if(i>=0) sum=sum+arr1[i--];
+            if(j>=0) sum=sum+arr2[j--];
+           
+            arr3[k--] = sum % 10;
+            carry = sum/10;
+        }
+        for(int l=0;l<arr3.length;l++)
+        {
+           if(arr3[l] == 0 && l==0) 
+           {
+                continue;
+           }
+           System.out.println(arr3[l]);
+        }
+    }
 
   
   
