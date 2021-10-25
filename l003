@@ -461,6 +461,45 @@ public class btd{
            System.out.println(arr3[l]);
         }
     }
+    // Difference of two Arrays
+    public static int[] array8() {
+        int n = 0;
+        n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int b = 0; b < n; b++) {
+            arr[b] = sc.nextInt();
+        }
+        return arr;
+    }
+    public static void differenceof2array(int[] arr1, int[] arr2) {
+        int m = arr1.length;
+        int n = arr2.length;
+
+        int s = Math.max(m, n);
+        int[] arr3 = new int[s];
+
+        int o = arr3.length;
+        int i = m - 1, j = n - 1, k = o - 1;
+
+        int borrow = 0, sum = 0;
+        while (k >= 0) {
+            sum = borrow + (j >= 0 ? arr2[j--] : 0) - (i >= 0 ? arr1[i--] : 0);
+            if (sum < 0) {
+                sum = sum + 10;
+                borrow = -1;
+            } else {
+                borrow = 0;
+            }
+            arr3[k--] = sum % 10;
+        }
+        for (int l = 0; l < arr3.length; l++) {
+            if (arr3[l] == 0 && l == 0) {
+                continue;
+            }
+            System.out.println(arr3[l]);
+        }
+    }
+
 
   
   
