@@ -517,6 +517,23 @@ public class btd{
         System.out.println();
         } 
     }
+    // 2 barchart
+    public static void copybarchartcopy()
+    {
+        int i=0;
+        int n = sc.nextInt();
+        int[] arr12=new int[n];
+        for(  i=0;i<arr12.length;i++)
+        {
+            arr12[i] = sc.nextInt();
+            int var = arr12[i];
+            for(int j=0; j<var;j++)
+            {
+                System.out.print("* " + " " );
+            }
+            System.out.println();
+        }
+    }
 
 
 
