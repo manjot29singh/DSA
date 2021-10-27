@@ -605,6 +605,13 @@ public class btd{
         // int base= sc.nextInt();
         // System.out.println( MULTIPLICATION(base,o,p));
 
+         //array();----> printarray(arr)---->find(arr, data);
+
+        // array1();//Reversing the array
+
+        // array2();//Rotate the array with k  
+
+        // array3();//Inverse of array
 
         
      }
