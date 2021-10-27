@@ -567,6 +567,17 @@ public class btd{
         }
 
     }
+    
+    public static void main (String[] args)
+    {
+        // long m= sc.nextLong();
+        // long o= sc.nextLong();
+        // System.out.println(dtab(m,o));
+
+        // long m= sc.nextLong();
+        // long o= sc.nextLong();
+        // System.out.println(abtd(m,o));
+
 
 
 
