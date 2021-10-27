@@ -590,6 +590,11 @@ public class btd{
         System.out.println(result);
         */
         
+        // long o=sc.nextLong();
+        // long p=sc.nextLong();
+        // long base=sc.nextLong();
+        // System.out.println(binaryaddition(o,p,base));
+        
      }
 
 
