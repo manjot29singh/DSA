@@ -599,6 +599,12 @@ public class btd{
         // long p= sc.nextLong();
         // long base= sc.nextLong();
         // System.out.println(binarysubtraction(o,p,base));
+        
+        // int o= sc.nextInt();
+        // int p= sc.nextInt();
+        // int base= sc.nextInt();
+        // System.out.println( MULTIPLICATION(base,o,p));
+
 
         
      }
