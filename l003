@@ -578,6 +578,18 @@ public class btd{
         // long o= sc.nextLong();
         // System.out.println(abtd(m,o));
         
+        /*
+        long m = sc.nextLong();//number
+        long n = sc.nextLong();//base1
+        long result1 = abtd1(m,n);
+        System.out.println(result1);
+
+        long o = result1;
+        long p  = sc.nextLong();//base2
+        long result = dtab1(o,p);
+        System.out.println(result);
+        */
+        
      }
 
 
