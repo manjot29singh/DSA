@@ -620,6 +620,10 @@ public class btd{
         // subarray(sub);
         
         barchart();
+        
+        // int[] a = array4();
+        // int[] b = array4();
+        // differenceof2array(a,b);
 
         
      }
