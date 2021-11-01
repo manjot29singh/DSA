@@ -612,6 +612,9 @@ public class btd{
         // array2();//Rotate the array with k  
 
         // array3();//Inverse of array
+        // int[] a = array4();
+        // int[] b = array4();
+        // sumof2array(a,b);
 
         
      }
