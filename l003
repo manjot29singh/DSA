@@ -618,6 +618,8 @@ public class btd{
         
          // int[] sub = array();
         // subarray(sub);
+        
+        barchart();
 
         
      }
