@@ -615,6 +615,9 @@ public class btd{
         // int[] a = array4();
         // int[] b = array4();
         // sumof2array(a,b);
+        
+         // int[] sub = array();
+        // subarray(sub);
 
         
      }
