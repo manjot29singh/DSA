@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class l004
+{
+public static Scanner sc = new Scanner(System.in);
+
+    //Generating a 2d Array
+    public static int[][] input()
+    {
+        int n=sc.nextInt();
+        int m =sc.nextInt();
+        int[][] arr=new int[n][m];
+        n=arr.length;
+        m=arr[0].length;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            {
+                arr[i][j]=sc.nextInt();
+
+            }
+        }
+            return arr;
+    }
+    
+    
+    
+    
+    
+    
+    
+}
