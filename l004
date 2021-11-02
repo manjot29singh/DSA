@@ -22,6 +22,20 @@ public static Scanner sc = new Scanner(System.in);
             return arr;
     }
     
+    //Display the 2d Array
+    public static void display(int[][] arr)
+    {
+        int n=arr.length;
+        int m=arr[0].length;
+        for(int i=0;i<n;i++)
+        {
+                for(int j=0; j<m;j++)
+                {
+                    System.out.print(arr[i][j] + " ");
+                }
+            System.out.println();
+        }
+    }
     
     
     
