@@ -67,6 +67,23 @@ public static Scanner sc = new Scanner(System.in);
     return max;
     }
     
+    // Minimum of 2d array
+    public static int minimum(int[][] arr)
+    {
+        int min = (int).1e9;
+        for(int []a : arr)
+        {
+            for(int ele : a)
+            {
+                if(ele<min)
+                {
+                    min=ele;
+                }   
+            }
+        }
+        return min;
+    }
+    
     
     
     
