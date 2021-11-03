@@ -49,6 +49,24 @@ public static Scanner sc = new Scanner(System.in);
         }
     }
     
+    //Maximum of 2d array
+    public static int maximum(int[][] arr)
+    {
+       
+        int max = (int)-1e9;
+        for(int[]i:arr)
+        {
+            for(int ele: i)
+            {   
+                if(ele>max)
+                {
+                    max=ele;
+                }
+            }
+        }
+    return max;
+    }
+    
     
     
     
