@@ -151,6 +151,18 @@ public static Scanner sc = new Scanner(System.in);
         }
     }
     
+    //  DIAGONAL Traversing
+    public static void diagonal(int[][] arr)
+    {
+        for(int gap=0;gap<arr.length;gap++)
+        {
+            for(int i=0 , j=gap ;  i<=arr.length-1 && j<=arr.length-1 ; i++,j++)
+            {
+                System.out.println(arr[i][j]);
+            }
+        }
+    }
+    
     
     
     
