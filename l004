@@ -163,6 +163,21 @@ public static Scanner sc = new Scanner(System.in);
         }
     }
     
+    // Rotate the 2d array in (+90) degree
+    public static void rotateby90(int[][] arr)
+    {
+        int n=arr.length;
+        int m=arr[0].length;
+        for(int j=0; j<m;j++)
+        {
+                for(int i=n-1;i>=0;i--)
+                {
+                    System.out.print(arr[i][j] + " ");
+                }
+            System.out.println();
+        }
+    }
+    
     
     
     
