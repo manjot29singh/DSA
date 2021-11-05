@@ -283,6 +283,20 @@ public static Scanner sc = new Scanner(System.in);
         System.out.println(j);
     }
     
+     public static void manipulation(int[][] queries){
+        int a=0,b=0,k=0; 
+        long i=0;       
+    
+    for(int f=0;f<queries.length;f++){
+            int x=0;
+
+            a =  queries[f][x++];
+            b =  queries[f][x++];
+            k =  queries[f][x];
+            System.out.println(a +" "+ b +" "+ k);
+        }
+    }
+    
     
     
     
