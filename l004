@@ -301,6 +301,14 @@ public static Scanner sc = new Scanner(System.in);
     {   
         int[][] arr1 = input();
         display(arr1);
+         // displaying(arr1);
+
+        // int max=maximum(arr1);
+        // System.out.println(max);
+
+        // int min=minimum(arr1);
+        // System.out.println(min);
+
         
     }
     
