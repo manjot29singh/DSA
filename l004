@@ -208,6 +208,36 @@ public static Scanner sc = new Scanner(System.in);
         }
     }
     
+    // Search in a 2D array
+    public static void search(int[][] arr,int find)
+    {
+        int n =arr.length;
+         int i =n-1;
+         int j =0;
+         boolean flag=false;
+        while(i>=0 && j<n)
+        {
+            if(arr[i][j]==find)
+            {
+                System.out.println(i);
+                System.out.println(j);
+                flag=true;
+                break;
+            }
+            else if(arr[i][j] > find)
+            {
+                i--;
+            }
+            else {
+                j++;        
+        
+
+            }
+        }
+        if(!flag)
+            System.out.println("notfound");
+    }
+    
     
     
     
