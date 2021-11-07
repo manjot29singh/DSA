@@ -315,6 +315,14 @@ public static Scanner sc = new Scanner(System.in);
         //leftrighttraversal(arr1);
 
         // UpDowntraversal(arr1);
+        // diagonal(arr1);
+
+        // int data = sc.nextInt();
+        // search(arr1,data);
+
+        // exitpoint();
+
+        manipulation(arr1);
 
         
     }
