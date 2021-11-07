@@ -308,9 +308,17 @@ public static Scanner sc = new Scanner(System.in);
 
         // int min=minimum(arr1);
         // System.out.println(min);
+        
+         // rotateby90(arr1);
+        //find(arr1);
+        
+        //leftrighttraversal(arr1);
+
+        // UpDowntraversal(arr1);
 
         
     }
+    
     
     
     
