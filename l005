@@ -1,1 +1,19 @@
+import java.util.Scanner;
+public class l005{
+    public static StringBuilder sb = new StringBuilder();
+
+    public static boolean ispalindrome(String str)
+    {
+        int si=0,ei=str.length()-1;
+        while(si<ei)
+        {
+            if(str.charAt(si++)!=str.charAt(ei--))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+}
 
