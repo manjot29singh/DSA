@@ -82,6 +82,13 @@ public class l005{
         }
         return sb.toString();
     }
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.next();
+        System.out.println(compression(str));
+
+        System.out.println(toggle(str));
 
     
     
