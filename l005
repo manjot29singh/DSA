@@ -89,6 +89,7 @@ public class l005{
         System.out.println(compression(str));
 
         System.out.println(toggle(str));
+     }
 
     
     
