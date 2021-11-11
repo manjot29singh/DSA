@@ -10,6 +10,16 @@ public class l006hackerrank
             
         return checkapalindrome(arr,si+1,ei-1);    
         }
+        
+        public static void reverseofarray(int[] arr, int si,int ei)//12
+        {
+            if(si>=ei)
+                return ;
+            int temp =arr[si];
+            arr[si]=arr[ei];
+            arr[ei]=temp;
+            reverseofarray(arr,si+1,ei-1);    
+        }
  
  
  
