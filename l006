@@ -1,1 +1,20 @@
+public class l006hackerrank
+{
+     // =======================================================================================================
+    // HACKERRANK
+    public static boolean checkapalindrome( int[] arr, int si ,int ei){ //11
+        if(si>=ei)
+            return true;
+        if(arr[si] != arr[ei])
+            return false;
+            
+        return checkapalindrome(arr,si+1,ei-1);    
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ }
 
