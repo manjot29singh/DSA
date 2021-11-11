@@ -29,6 +29,16 @@ public class l006hackerrank
             inverseofarray(arr,idx+1);
             arr[value] = idx;
         }
+        
+        public static int SumofDigit(String str , int idx)//16
+    {
+        if(idx==str.length())
+        {
+            return 0;
+        }
+        int result = SumofDigit(str,idx+1);
+        return result+ (str.charAt(idx) - '0');
+    }
 
  
  
