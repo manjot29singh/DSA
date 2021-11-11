@@ -46,6 +46,15 @@ public class l006hackerrank
            long ans = StringtoNumber(str,idx-1,pow*10);
             return ans + (str.charAt(idx) -'0') * pow;
         }
+        
+        public static boolean reverseString(String s1, int idx1,String s2,int idx2)//18
+        {
+            if(idx1 == 4)
+                return true;
+            if(s1.charAt(idx1) != s2.charAt(idx2)) 
+                return false;
+             return reverseString(s1 , idx1+1 , s2 , idx2-1);
+        }
 
  
  
