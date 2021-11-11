@@ -20,6 +20,16 @@ public class l006hackerrank
             arr[ei]=temp;
             reverseofarray(arr,si+1,ei-1);    
         }
+        
+        public static void inverseofarray(int[] arr, int idx) //13
+        {
+            if(idx==arr.length)
+                return;
+            int value = arr[idx];
+            inverseofarray(arr,idx+1);
+            arr[value] = idx;
+        }
+
  
  
  
