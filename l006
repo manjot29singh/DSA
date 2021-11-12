@@ -68,6 +68,19 @@ public class l006hackerrank
             else
                 return ch + "*" + ans;   //pep* 
         }
+        public static void SeperateDuplicates(String str, int idx, String ans)
+        {
+            if(idx == str.length()-1)
+            {
+                System.out.println(ans   +   str.charAt(idx)); //pep*pepcodin  +  g
+                return;
+            }
+            char ch = str.charAt(idx);
+            if(ch != str.charAt(idx+1))
+                SeperateDuplicates(str,idx+1,ans+ch);//
+            else
+                SeperateDuplicates(str,idx+1,ans+ch+"*");       
+        }
 
  
  
