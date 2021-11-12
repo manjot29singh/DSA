@@ -55,6 +55,19 @@ public class l006hackerrank
                 return false;
              return reverseString(s1 , idx1+1 , s2 , idx2-1);
         }
+        
+        public static String SeperateDuplicates(String str) //20              peppepcoding
+        {
+            if(str.length()==1)  //g
+                return str;  //g
+            char ch = str.charAt(0); //p
+            String ros = str.substring(1); //eppepcoding
+            String ans = SeperateDuplicates(ros);  //seperateduplicate(eppepcoding)
+            if(ch != ans.charAt(0)) //p!=e
+                return ch + ans; //p
+            else
+                return ch + "*" + ans;   //pep* 
+        }
 
  
  
