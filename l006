@@ -81,6 +81,19 @@ public class l006hackerrank
             else
                 SeperateDuplicates(str,idx+1,ans+ch+"*");       
         }
+        
+        public static String remove_adjacentduplicate(String str) //21
+    {
+        if(str.length()==1)
+            return str;
+        char ch= str.charAt(0);
+        String ros = str.substring(1);
+        
+        String ans = remove_adjacentduplicate(ros);
+        if(ch != ans.charAt(0))
+            return ch + ans;
+        return ans;
+    }
 
  
  
