@@ -112,15 +112,16 @@ public class l006hackerrank
         
     }
     
-    // public static void main(String[] args) {
-    //     /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-    // String s= sc.next();
-    //      int i=sc.nextInt();
-    //      String result=remove_adjacent(s);
-    //      System.out.println(result.charAt(i));
+     public static void main(String[] args) {
+         /*Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+          String s= sc.next();
+          int i=sc.nextInt();
+          String result=remove_adjacent(s);
+          System.out.println(result.charAt(i));
         
         
-    //     removeadjacent(s,0,"");
+         removeadjacent(s,0,"");
+         }
 
 
  
