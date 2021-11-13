@@ -94,6 +94,23 @@ public class l006hackerrank
             return ch + ans;
         return ans;
     }
+    
+     public static void removeadjacentduplicate(String str,int idx,String ans)
+    {
+        if(idx == str.length() - 1){
+            System.out.println(ans + str.charAt(idx));
+            return;
+        }
+        
+        char ch = str.charAt(idx);
+            if(ch != str.charAt(idx+1))
+            {
+               removeadjacentduplicate(str,idx+1,ans + ch);
+            }
+         else
+            removeadjacentduplicate(str,idx+1,ans);
+        
+    }
 
  
  
