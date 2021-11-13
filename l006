@@ -111,6 +111,17 @@ public class l006hackerrank
             removeadjacentduplicate(str,idx+1,ans);
         
     }
+    
+    // public static void main(String[] args) {
+    //     /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    // String s= sc.next();
+    //      int i=sc.nextInt();
+    //      String result=remove_adjacent(s);
+    //      System.out.println(result.charAt(i));
+        
+        
+    //     removeadjacent(s,0,"");
+
 
  
  
