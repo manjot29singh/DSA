@@ -30,6 +30,16 @@ public class l006{
         System.out.println(n);
 
     }
+    
+    public static int factorial(int n) {
+        if(n==0)
+        {
+            return 1;
+        }
+        int res = factorial(n-1);
+        int result = n * res;
+        return result;
+    }
 
 
 
