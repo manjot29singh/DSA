@@ -82,6 +82,19 @@ public class l006{
         }
         return firstIndex(arr,idx+1,x);
     }
+    
+     public static int lastIndex(int[] arr, int idx, int x) {
+        if(idx == -1)
+        {
+            return -1;
+            
+        }
+        if(arr[idx]==x)
+        {
+            return idx;
+        }
+     return lastIndex(arr,idx-1,x);
+    }
 
 
 
