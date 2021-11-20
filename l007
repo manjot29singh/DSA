@@ -40,6 +40,17 @@ public class l006{
         int result = n * res;
         return result;
     }
+    
+    public static int power(int x, int n) {
+        
+        if(x * n==0)
+        {
+            return 1;
+        }
+        int res = power(x, n/2);
+        int result = res * x;
+        return result;
+    }
 
 
 
