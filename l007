@@ -69,6 +69,19 @@ public class l006{
          
         return Math.max((arr[idx]), maxOfArray(arr,idx+1));   
     }
+    
+     public static int firstIndex(int[] arr, int idx, int x) {
+        if(idx==arr.length)
+        {
+            return -1;
+            
+        }
+        if(arr[idx]==x)
+        {
+            return idx;
+        }
+        return firstIndex(arr,idx+1,x);
+    }
 
 
 
