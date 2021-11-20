@@ -60,6 +60,15 @@ public class l006{
          System.out.println(arr[idx]);
         displayArr(arr,idx+1);  
     }
+    
+    public static int maxOfArray(int[] arr, int idx) {
+        if(idx==arr.length)
+        {
+            return -(int)1e9;
+        }
+         
+        return Math.max((arr[idx]), maxOfArray(arr,idx+1));   
+    }
 
 
 
