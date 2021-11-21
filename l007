@@ -95,6 +95,10 @@ public class l006{
         }
      return lastIndex(arr,idx-1,x);
     }
+    
+     // int x= sc.nextInt();
+    // int s=lastIndex(arr,arr.length-1,x);
+    // System.out.println(s);  
 
 
 
