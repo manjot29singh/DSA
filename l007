@@ -119,6 +119,18 @@ public class l006{
         
     }
     
+    public static void main(String[] args)
+    {
+        int n= sc.nextInt();
+        // printIncreasing(n);
+        // printDecreasing(n);
+        // pdi(n);
+        // System.out.println(factorial(n));
+        // int x= sc.nextInt();
+        // System.out.println(power(x,n));
+
+    }
+    
 
 
 
