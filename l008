@@ -1,1 +1,29 @@
+import java.util.Scanner;
+public class l001{
+    public static Scanner sc = new Scanner(System.in);
 
+    public static void binarysearch(int []arr,int data,int si,int ei)
+    {
+        
+       
+        while(si<=ei)
+        {
+            int mid = (si+ei)/2;
+            if(data==arr[mid])
+            {
+                System.out.println(mid);
+                return;
+                
+            }
+            else if(data>arr[mid])
+            {
+                si=mid+1;
+                
+            }
+            else
+            {
+               ei=mid-1;
+            }
+        }
+    
+    }
