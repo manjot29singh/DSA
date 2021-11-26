@@ -37,6 +37,7 @@ public class l001{
         }
         int data = sc.nextInt();
        binarysearch(arr,data,0,n-1);
+       }
 
     
     
