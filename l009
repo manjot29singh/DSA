@@ -43,4 +43,12 @@ public  class linkedlist{
             throw new Exception("Index Out of Bound : -1");
         }
     }
+    public void IndexOutOfBoundSizeInclusiveException(int idx) throws Exception
+    {
+        //to check either given index is valid or not .. (IDX == SIZE P ADD KRSKTE H ) 
+        if(idx < 0 || idx > this.sizeofll){
+            throw new Exception("Index Out of Bound : -1");
+        }
+    }
+
     
