@@ -50,5 +50,19 @@ public  class linkedlist{
             throw new Exception("Index Out of Bound : -1");
         }
     }
+    //Add===========================================
+    private void addfirstnode(Node node)
+    {
+        if(this.head==null){
+            this.head = node;
+            this.tail = node;
+        }
+        else{
+            node.next=head;
+            this.head=node;
+        }
+        this.sizeofll++;
+    }
+
 
     
