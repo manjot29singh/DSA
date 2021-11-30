@@ -28,4 +28,12 @@ public  class linkedlist{
         }
         System.out.println();
     }
+    //Exception======================================
+    public void emptyexception() throws Exception
+    {
+        if(this.sizeofll==0){
+            throw new Exception("Linked List is EMPTY : -1");
+        }
+
+    }
     
