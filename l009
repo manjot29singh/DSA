@@ -63,6 +63,11 @@ public  class linkedlist{
         }
         this.sizeofll++;
     }
+    public void addfirst(int data)
+    {
+        Node node1 = new Node(data);
+        addfirstnode(node1);
+    }
 
 
     
