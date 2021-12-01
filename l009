@@ -103,6 +103,24 @@ public  class linkedlist{
             this.sizeofll++;//IMPORTANT POINT
         }
     }
+    private void addatNode(int idx,Node node)
+    {
+        if(idx == 0){
+            addfirstnode(node);
+        }
+        else if(idx == this.sizeofll){
+            addlastnode(node);
+        }
+        else{
+            Node prev = getnodeatidx(idx-1);
+            Node forw = prev.next;
+
+            prev.next = node;
+            node.next       = forw;
+            this.sizeofll++;//IMPORTANT POINT
+        }
+    }
+
 
 
 
