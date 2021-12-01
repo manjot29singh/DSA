@@ -120,6 +120,12 @@ public  class linkedlist{
             this.sizeofll++;//IMPORTANT POINT
         }
     }
+    public void addat(int idx,int data)throws Exception
+    {
+        IndexOutOfBoundSizeInclusiveException(idx);
+        Node node = new Node(data);
+        addatNode(idx,node);
+    }
 
 
 
