@@ -126,6 +126,18 @@ public  class linkedlist{
         Node node = new Node(data);
         addatNode(idx,node);
     }
+     //===================================
+    //get functions
+    public int getfirstnodedata() throws Exception
+    {
+        emptyexception();
+        return this.head.data;
+    }
+
+    public int getlastnodedata()
+    {
+        return this.tail.data;
+    }
 
 
 
