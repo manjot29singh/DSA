@@ -138,6 +138,14 @@ public  class linkedlist{
     {
         return this.tail.data;
     }
+     private Node getnodeatidx(int idx)
+    {
+        Node curr=this.head;
+        while(idx--> 0){
+            curr=curr.next;
+        } 
+        return curr;
+    }
 
 
 
