@@ -68,6 +68,24 @@ public  class linkedlist{
         Node node1 = new Node(data);
         addfirstnode(node1);
     }
+    private void addlastnode(Node node1)
+    {
+        if(this.head==null){
+            this.head=node1;
+            this.tail=node1;
+        }
+        else{
+            this.tail.next=node1;
+            this.tail=node1;
+        }
+        this.sizeofll++;
+    }
+
+    public void addlast(int data)
+    {
+        Node node1 =new Node(data);
+        addlastnode(node1);
+    }
 
 
     
