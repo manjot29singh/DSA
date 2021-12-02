@@ -146,6 +146,13 @@ public  class linkedlist{
         } 
         return curr;
     }
+     public int getatidxdata(int idx)throws Exception
+    {
+        IndexOutOfBoundSizeExclusiveException(idx);
+       Node node= getnodeatidx(idx);//that node will be provided here to and its data will be extracted to use further
+       return node.data;
+       
+    }
 
 
 
