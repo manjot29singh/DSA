@@ -194,6 +194,37 @@ public  class linkedlist{
         return node.data;
     }
     
+    private Node removenodeat(int idx)
+    {
+        Node curr =null;
+        if(idx==0){
+            removefirstnode();
+        }
+        else if(idx==sizeofll){
+            removelastnode();
+        }
+        else{
+            Node prev = getnodeatidx(idx-1);
+            curr = prev.next;
+            Node forw = curr.next;
+
+            prev.next=forw;
+            curr.next=null;
+            this.sizeofll--;
+        }
+        return curr;
+        
+        
+    }
+    
+    public int removeat(int idx) throws Exception
+    {
+        emptyexception();
+        Node node = removenodeat(idx);
+        return node.data;
+
+    }
+    
 
 
 
