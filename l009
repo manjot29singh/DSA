@@ -173,6 +173,27 @@ public  class linkedlist{
         Node node = removefirstnode();
         return node.data;
     }
+    
+    private Node removelastnode(){
+        Node removenode = this.tail;
+        if(this.sizeofll==1){
+            this.tail=null;
+        }
+        else{
+            Node secondlastnode=getnodeatidx(sizeofll-2);
+            this.tail=secondlastnode;
+            secondlastnode.next=null;
+        }
+        this.sizeofll--;
+        return removenode;
+    }
+
+    public int removelast()throws Exception{
+        emptyexception();
+        Node node=removelastnode();
+        return node.data;
+    }
+    
 
 
 
