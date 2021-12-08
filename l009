@@ -235,6 +235,21 @@ public  class linkedlist{
         }
         return slow.data;
     }
+    public void reversePI(){//97;40:00
+        // we have to just turn the link form this 0->0->0-> to his 0<-0<-0<-0<-
+        Node curr = this.head;
+        Node prev = null;
+        while(curr != null){
+            Node forw = curr.next; // it starts the loop
+            
+            curr.next = prev; //MAIN PINT TO REMEMBER BCS IT TURNS THE LINK TO OPPOSITE SIDE
+            prev = curr;//MOVE THEM TO NEXT;
+            curr = forw;//MOVE THEM TO NEXT
+        }
+        tail = head; //MAKE THE TAIL AS NEW HEAD;
+        head= prev;//AND WHEN CURR ==NULL AND LOOP BREAKS THEN OUR HEAD WILL BE AT PREV.
+        
+    }  
     
 
 
