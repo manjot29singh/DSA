@@ -225,6 +225,17 @@ public  class linkedlist{
 
     }
     
+    //26 feb===========================================================
+    public int mid(){
+        Node slow = head;
+        Node fast = head;
+        while(fast.next !=null && fast.next.next != null){//mid 1 =default for even ll.
+            fast=fast.next.next;
+            slow = slow.next;
+        }
+        return slow.data;
+    }
+    
 
 
 
