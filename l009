@@ -3,6 +3,7 @@ public  class linkedlist{
         int data = 0;
         Node next = null;
 
+
         Node(int data){
             this.data = data;
         }
@@ -284,6 +285,20 @@ public  class linkedlist{
           j--;//reduce j
       } 
     }
+     private void reversePRHelper(Node node){
+        // write your code here
+        if(node.next==null){
+            Node temp = this.head;//swap head with tail
+            this.head= this.tail;
+            this.tail=temp;
+            return;
+        }
+        //main call
+        reversePRHelper(node.next);
+        
+        node.next.next = node; //put second last node.next.next = node;
+        node.next = null;  // break the link of second last node to last node so that last node will be pointing second last node
+      }
     
 
 
