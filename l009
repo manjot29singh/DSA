@@ -249,7 +249,24 @@ public  class linkedlist{
         tail = head; //MAKE THE TAIL AS NEW HEAD;
         head= prev;//AND WHEN CURR ==NULL AND LOOP BREAKS THEN OUR HEAD WILL BE AT PREV.
         
-    }  
+    } 
+    
+    public int length(){
+        Node curr = this.head;
+        int sizee = 0;
+        while(curr != null){
+            curr=curr.next;
+            sizee++;
+        }
+        return sizee;
+    }
+    public Node getnodeat(int idx){
+        Node curr = this.head;
+        while(idx-->0){
+            curr=curr.next;
+        }
+        return curr;
+    }
     
 
 
