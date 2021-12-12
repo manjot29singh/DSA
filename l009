@@ -318,6 +318,13 @@ public  class linkedlist{
            rleft = rleft.next;//move rleft to next node as node will be moving due to recurrsion
         }
     }
+    Node rleft;
+    public void reverseDR() {
+      // write your code here
+      rleft = head;//start the left from head and node will be starting from the last when the recurssion comes down in stack
+      reversedrhelper(head,0);//start with florr == 0 bcs we will increment it till the mid condtion 
+    }
+    
 
     
 
