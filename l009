@@ -299,6 +299,12 @@ public  class linkedlist{
         node.next.next = node; //put second last node.next.next = node;
         node.next = null;  // break the link of second last node to last node so that last node will be pointing second last node
       }
+      
+       public void reversePR(){
+        // write your code here
+        reversePRHelper(head);
+      }
+
     
 
 
