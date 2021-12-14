@@ -375,6 +375,15 @@ public  class linkedlist{
     ans .addFirst(nd);
     return nc;   
 }
+public static LinkedList addTwoLists(LinkedList one, LinkedList two) {
+  // write your code here
+  LinkedList ans = new LinkedList();
+  int oc = addtwolisthelper(one.head,one.size,two.head,two.size,ans);
+  if(oc > 0){
+      ans.addFirst(oc);
+  }
+  return ans;
+}
     
 
     
