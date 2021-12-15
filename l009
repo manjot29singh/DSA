@@ -409,6 +409,21 @@ public int kthFromLast(int k) {
 
     return slow.data;
 }
+public static LinkedList mergeSort(Node head, Node tail){
+  // write your code here
+  if(head == tail){
+      LinkedList base = new LinkedList();
+      base.addLast(head.data);
+      return base;
+  }
+  Node mid = getmid(head,tail);
+  Node temp = mid.next;
+  mid.next=null;
+  LinkedList firstsorted = mergeSort(head,mid);
+  LinkedList secondsorted = mergeSort(temp,tail);
+  mid.next = temp;
+  return mergeTwoSortedLists(firstsorted,secondsorted);
+} 
     
 
     
