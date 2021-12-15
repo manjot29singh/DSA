@@ -384,6 +384,15 @@ public static LinkedList addTwoLists(LinkedList one, LinkedList two) {
   }
   return ans;
 }
+public static Node getmid(Node head,Node tail){
+    Node slow = head;
+    Node fast = head;
+    while (fast.next != null && fast.next.next != null) {
+        fast= fast.next.next;
+        slow=slow.next;
+    }
+    return slow;
+}
     
 
     
