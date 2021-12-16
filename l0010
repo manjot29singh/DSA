@@ -1,1 +1,14 @@
+import java.util.ArrayList;
+// trees ki 1 class : 2nd March
 
+public class l001bt{
+    public static class Node{
+        int data = 0;
+        Node left = null;
+        Node right = null;
+
+        Node(int data){
+            this.data = data;
+
+        }
+    }
