@@ -12,3 +12,34 @@ public class l001bt{
 
         }
     }
+    //TRaversals
+    public static void preOrderTraversel(Node root, ArrayList<Integer> ans){
+        if(root == null){
+            return;
+        }
+        ans.add(root.data);
+        preOrderTraversel(root.left,ans);
+        preOrderTraversel(root.right,ans);
+    }
+    public static void InOrderTraversel(Node root, ArrayList<Integer> ans){
+        if(root == null){
+            return;
+        }
+        InOrderTraversel(root.left,ans);
+        ans.add(root.data);
+        InOrderTraversel(root.right,ans);
+    }
+    public static void PostOrderTraversel(Node root, ArrayList<Integer> ans){
+        if(root == null){
+            return;
+        }
+        PostOrderTraversel(root.left,ans);
+        PostOrderTraversel(root.right,ans);
+        ans.add(root.data);
+    }
+    public static void Traversal(Node root){
+        ArrayList<Integer> ans = new ArrayList<>();
+        preOrderTraversel(root, ans);
+        InOrderTraversel(root, ans);
+        PostOrderTraversel(root, ans);
+    }
