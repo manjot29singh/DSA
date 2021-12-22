@@ -43,3 +43,20 @@ public class l001bt{
         InOrderTraversel(root, ans);
         PostOrderTraversel(root, ans);
     }
+    // Basic Functions
+    public static int size(Node root){
+        if(root==null){
+            return 0;
+        }
+        int left =size(root.left);
+        int right =size(root.right);
+        return left + right + 1;
+    }
+    public static int height(Node root){//in terms of edge (arrows)--------->
+        if(root==null){
+            return -1;
+        }
+        int left = height(root.left);
+        int right = height(root.right);
+        return Math.max(left,right) + 1;
+    }
