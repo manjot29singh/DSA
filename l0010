@@ -60,3 +60,19 @@ public class l001bt{
         int right = height(root.right);
         return Math.max(left,right) + 1;
     }
+    public static int heightintermsofNode(Node root){
+        if(root==null){
+            return 0;
+        }
+        int left =  heightintermsofNode(root.left);
+        int right =  heightintermsofNode(root.right);
+        return Math.max(left, right)+1;
+    }
+    public static int max(Node root){
+        if(root==null){
+            return -(int)1e9;   
+        }
+        int leftmax = max(root.left);
+        int rightmax = max(root.right);
+        return Math.max(Math.max(leftmax,rightmax),root.data);
+    }
