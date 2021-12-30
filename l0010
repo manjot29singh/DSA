@@ -99,3 +99,19 @@ public class l001bt{
         //boolean res = root.data == data;
         return root.data == data || findData1(root.left,data) || findData1(root.right,data);
     }
+    public static boolean findData2(Node root , int data){
+        if(root == null){
+            return false;
+        }
+        if(root.data==data){
+            return true;
+        }
+        boolean left = findData2(root.left,data);
+        if(left)
+            return true;
+        
+        boolean right = findData2(root.right, data);
+        if(right)
+            return true;
+        return false;
+    }
