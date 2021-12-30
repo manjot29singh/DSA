@@ -92,3 +92,10 @@ public class l001bt{
         int rightsum = sum(root.right);
         return rightsum + leftsum + root.data;
     }
+    public static boolean findData1(Node root , int data){//reccursion
+        if(root == null){
+            return false;
+        }
+        //boolean res = root.data == data;
+        return root.data == data || findData1(root.left,data) || findData1(root.right,data);
+    }
