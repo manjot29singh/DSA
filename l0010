@@ -115,3 +115,13 @@ public class l001bt{
             return true;
         return false;
     }
+    public static boolean roottoNodepath(Node root , int data , ArrayList<Node> ans){
+        if(root==null){
+            return false; 
+        }
+
+        boolean res = (root.data==data) || roottoNodepath(root.left,data,ans) || roottoNodepath(root.right,data,ans);
+        if (res)
+            ans.add(root);
+        return res;
+    }
