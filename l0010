@@ -307,4 +307,18 @@ public class l001bt{
         isBalpair ans = isbalance(node);
         return ans.balancetree;
     }
+    public static int totalbst(Node node){
+        
+        if(node==null) return 0;
+
+        isBalpair ans = new isBalpair();
+
+        int left = totalbst(node.left);
+
+        if(node.left.data < node.data && node.data < node.right.data && ans.IsBST ){
+       
+        }
+        int right = totalbst(node.right);   
+    }
+
 
