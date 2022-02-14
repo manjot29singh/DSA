@@ -1,1 +1,25 @@
+public class stack{
+    protected int[] arr = null;
+    protected int capacity = 0;
+    protected int elementcount = 0 ;
+    protected int tos = -1;
 
+    //constructor=======================================
+    protected void initializeVariables(int capacity){
+        this.capacity = capacity;
+        this.arr = new int[this.capacity];
+        this.elementcount = 0;
+        this.tos = -1; 
+    }
+    public stack(){//default
+        initializeVariables(10);
+    }
+
+    public stack(int size){//parametrized
+        initializeVariables(size);
+
+    }
+    
+    
+    
+}
