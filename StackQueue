@@ -19,6 +19,25 @@ public class stack{
         initializeVariables(size);
 
     }
+     //basic functions===================================
+    public int size(){
+        return this.elementcount;
+    }
+    public boolean isempty(){
+        return this.elementcount == 0;
+    }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = 0; i < this.elementcount; i++) {
+            sb.append(this.arr[i]);
+            if (i != this.elementcount - 1)
+                sb.append(", ");
+        }
+        sb.append("]");
+        return sb.toString();
+    }
     
     
     
