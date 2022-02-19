@@ -42,6 +42,17 @@ public class stack{
         Underflowexception();
         return this.arr[this.tos];
     }
+     //Exception========================================
+  private void Overflowexception() throws Exception{
+        if(this.capacity == this.elementcount){
+            throw new Exception("Stackisoverflow");
+        }
+    }
+   private void Underflowexception() throws Exception{
+        if(this.elementcount==0){
+            throw new Exception("Stack is empty");
+        }
+    }
     
     
     
