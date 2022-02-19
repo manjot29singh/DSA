@@ -38,6 +38,10 @@ public class stack{
         sb.append("]");
         return sb.toString();
     }
+     public int topofthestack()throws Exception{
+        Underflowexception();
+        return this.arr[this.tos];
+    }
     
     
     
