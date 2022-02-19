@@ -53,6 +53,15 @@ public class stack{
             throw new Exception("Stack is empty");
         }
     }
+     //push============================================
+    protected void push_(int data){
+        this.arr[++this.tos]=data;    //increment the tos and then add the data bcs we started tos from -1;
+        elementcount++;
+    }
+    public void push (int data)throws Exception{
+        Overflowexception();
+        push_(data);
+    }
     
     
     
