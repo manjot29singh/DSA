@@ -62,6 +62,13 @@ public class stack{
         Overflowexception();
         push_(data);
     }
+    //pop===================================
+    protected int pop_(){
+        int removevalue =  this.arr[this.tos];
+        this.arr[this.tos--] = 0 ;
+        this.elementcount--;
+        return removevalue;
+    }
     
     
     
