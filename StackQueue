@@ -69,6 +69,10 @@ public class stack{
         this.elementcount--;
         return removevalue;
     }
+    public int pop()throws Exception{
+        Underflowexception();
+        return pop_(); 
+    }
     
     
     
