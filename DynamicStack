@@ -1,1 +1,45 @@
+public class dynamicstack extends stack{
+    //when we hava to make some changes to the file which is currently used by many users and we have to change something int hta file then we have to construct a new file for it to implement the changes.
+    
+    //CONSTRUCTOR CHAINING = when we make constructors more than one.
 
+    public dynamicstack(){//we have to provide al the constructors written in the parent class bcs dynamic stack will use the constructor of dynamic stack so we have to implement tht all the constructors of the parent class sin the child class.
+        this.capacity = 10;
+        initializeVariables(capacity);
+        //super(); hre super means that it calls to parent class and () means it is a constructor.
+    }
+    public dynamicstack(int size){
+        this.capacity = size;
+        initializeVariables(capacity);
+        //super(size);
+    }
+    public dynamicstack(int[] arr){//one more constructor
+        this.capacity = arr.length;//capacity == arr.length
+        initializeVariables(capacity);//
+
+        for(int ele : arr){
+            push_(ele);
+        }
+    }
+    //this function will overrride the push in the parent class
+    public void push(int data)throws Exception{//new function which will make stack as dynamic.we will handle here olny overflow exception
+        if(super.capacity == super.elementcount){//conditon if the old stack is full.parent.capacity == parent.elementcount.
+            int[] temp = super.arr;//copy old data in new arr temp;
+
+            super.initializeVariables(2 * super.capacity);//call the initializevariable method of parent class to initia;ize the variables with 2 times the capacity.
+            
+            for(int ele : temp){
+                super.push_(ele);
+            }
+        }
+        super.push(data);
+
+   }
+
+
+
+
+
+
+
+}
